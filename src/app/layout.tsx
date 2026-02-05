@@ -1,27 +1,15 @@
 import type { Metadata } from "next";
-import { DM_Sans, Source_Serif_4, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const inter = Inter({
     subsets: ["latin"],
-    variable: "--font-dm-sans",
-    weight: ["400", "500", "700"],
-});
-
-const sourceSerif4 = Source_Serif_4({
-    subsets: ["latin"],
-    variable: "--font-source-serif",
-    weight: ["400", "600"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-    subsets: ["latin"],
-    variable: "--font-jetbrains-mono", // Keeping legacy name or updating to standard
-    weight: ["500"],
+    variable: "--font-inter",
+    display: "swap",
 });
 
 export const metadata: Metadata = {
-    title: "Adstext - Contextual Ads for AI Apps",
+    title: "Adtext - Contextual Ads for AI Apps",
     description: "The ad platform built for AI chatbots. Monetize your AI app without hurting user experience.",
 };
 
@@ -32,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${dmSans.variable} ${sourceSerif4.variable} ${jetbrainsMono.variable} antialiased font-sans`}>
+            <body className={`${inter.variable} antialiased font-sans`}>
                 {children}
             </body>
         </html>
