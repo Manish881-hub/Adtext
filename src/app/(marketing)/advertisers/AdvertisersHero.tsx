@@ -1,52 +1,91 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import ChatMockup from "@/components/shared/ChatMockup";
-import CategoryPills from "@/components/shared/CategoryPills";
+
+
+const heroVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut" as const
+        }
+    }
+};
+
+const mockupVariants = {
+    hidden: { opacity: 0, scale: 0.9, x: 40 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        x: 0,
+        transition: {
+            duration: 0.8,
+            delay: 0.3,
+            ease: "easeOut" as const
+        }
+    }
+};
 
 const AdvertisersHero = () => {
     return (
-        <section className="py-16 lg:py-24 px-6 lg:px-12">
+        <section className="py-16 lg:py-24 px-6 lg:px-12 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        initial="hidden"
+                        animate="visible"
+                        variants={heroVariants}
                     >
-                        <span className="label-mono mb-4 block">Target your ads with more context</span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6">
+                        <motion.span
+                            className="label-mono mb-4 block"
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            Target your ads with more context
+                        </motion.span>
+                        <motion.h1
+                            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.1 }}
+                        >
                             The largest ad platform for AI chatbots
-                        </h1>
-                        <p className="text-lg text-foreground mb-2">
+                        </motion.h1>
+                        <motion.p
+                            className="text-lg text-foreground mb-2"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                        >
                             Adtext leverages LLMs to deliver unique ad formats tailored to GenAI applications.
-                        </p>
-                        <p className="text-lg text-muted-foreground mb-8">
+                        </motion.p>
+                        <motion.p
+                            className="text-lg text-muted-foreground mb-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                        >
                             Tap into the next major consumer wave and begin advertising in GenAI apps with Adtext.
-                        </p>
-                        <Button size="lg" className="group font-mono uppercase tracking-wider text-sm">
-                            Get started
-                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                        </motion.p>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                        >
+                            <Button size="lg" className="group font-mono uppercase tracking-wider text-sm">
+                                Get started
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                        </motion.div>
                     </motion.div>
 
-                    <div className="relative flex justify-center lg:justify-end">
-                        <div className="hidden lg:grid grid-cols-2 xl:grid-cols-3 gap-4 absolute -right-12 top-1/2 -translate-y-1/2 opacity-50 pointer-events-none z-0">
-                            <div className="space-y-4">
-                                <CategoryPills categories={["CapCut", "Cosmic Latte"]} activeIndex={-1} />
-                                <CategoryPills categories={["Dorian", "GOG"]} activeIndex={-1} />
-                            </div>
-                            <div className="space-y-4 pt-12">
-                                <CategoryPills categories={["Hornet", "NetEase"]} activeIndex={-1} />
-                                <CategoryPills categories={["CD Projekt", "SuperScale"]} activeIndex={-1} />
-                            </div>
-                            <div className="space-y-4 pt-24 hidden xl:block">
-                                <CategoryPills categories={["AI Search", "Virtual Characters"]} activeIndex={-1} className="bg-primary/5 border-primary/20 text-primary" />
-                                <CategoryPills categories={["Chat", "Support & Sales"]} activeIndex={-1} className="bg-primary/5 border-primary/20 text-primary" />
-                            </div>
-                        </div>
-                        <ChatMockup variant="advertisers" className="relative z-10" />
-                    </div>
+
                 </div>
             </div>
         </section>

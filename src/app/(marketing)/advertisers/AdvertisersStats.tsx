@@ -1,4 +1,7 @@
+"use client";
+
 import { motion } from "framer-motion";
+import { staggerContainer, staggerItem, fadeInUp } from "@/hooks/useScrollAnimation";
 
 const stats = [
     {
@@ -20,9 +23,11 @@ const AdvertisersStats = () => {
         <section className="py-20 px-6 lg:px-12 bg-muted/30">
             <div className="max-w-7xl mx-auto">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                    variants={fadeInUp}
+                    transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
                     className="text-center mb-16"
                 >
                     <span className="label-mono mb-4 block">Next-gen ads in the era of AI</span>
@@ -31,21 +36,25 @@ const AdvertisersStats = () => {
                     </h2>
                 </motion.div>
 
-                <div className="grid md:grid-cols-3 gap-8">
-                    {stats.map((stat, index) => (
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                    variants={staggerContainer}
+                    className="grid md:grid-cols-3 gap-8"
+                >
+                    {stats.map((stat) => (
                         <motion.div
                             key={stat.title}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className="bg-background rounded-2xl p-6 shadow-sm border border-border"
+                            variants={staggerItem}
+                            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                            className="bg-background rounded-2xl p-6 shadow-sm border border-border hover:shadow-xl transition-shadow"
                         >
                             <h3 className="text-xl font-semibold text-foreground mb-4">{stat.title}</h3>
                             <p className="text-muted-foreground text-sm leading-relaxed">{stat.description}</p>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

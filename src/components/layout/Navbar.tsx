@@ -17,11 +17,8 @@ export function Navbar() {
 
     return (
         <div className="flex flex-col">
-            <div className="bg-indigo-600 text-white text-xs md:text-sm font-medium py-2.5 px-4 text-center">
-                <span className="opacity-95">Adstext raised a $10M seed round to reinvent advertising in the era of AI.</span>
-                <Link href="#" className="underline ml-2 opacity-100 hover:text-indigo-100 font-semibold">Learn more</Link>
-            </div>
-            <nav className="border-b border-neutral-200 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/95 backdrop-blur-md sticky top-0 z-50">
+
+            <nav>
                 <div className="mx-auto max-w-7xl flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
                     {/* Left Section: Mobile Trigger & Logo */}
                     <div className="flex items-center gap-4">
@@ -40,7 +37,7 @@ export function Navbar() {
                                             <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                                 A
                                             </div>
-                                            Adstext
+                                            Adtext
                                         </Link>
                                         <div className="flex flex-col gap-4 text-lg font-medium">
                                             <Link
@@ -70,7 +67,7 @@ export function Navbar() {
                             <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                 A
                             </div>
-                            Adstext
+                            Adtext
                         </Link>
                     </div>
 
