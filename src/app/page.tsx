@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, Bot, Cpu, Zap, Globe, Layers, Sparkles } from "lucide-react";
 import * as React from "react";
 
@@ -7,7 +8,7 @@ const MODELS = ["Nano Banana Pro", "Flux 2", "gpt-image-1.5", "Seedream", "Claud
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden relative selection:bg-indigo-500/30 selection:text-indigo-200">
+    <main className="min-h-screen bg-[#050505] text-white overflow-x-hidden relative selection:bg-indigo-500/30 selection:text-indigo-200">
 
       {/* Background Noise/Grid Effect */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.03]"
@@ -130,24 +131,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 bg-black py-20 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center font-heading font-bold text-white">A</div>
-            <span className="font-heading font-bold text-xl tracking-tight text-white">Adtext</span>
-          </div>
-          <div className="flex gap-8 text-neutral-400 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
-          </div>
-          <div className="text-neutral-600 text-sm">
-            &copy; {new Date().getFullYear()} Adtext Inc.
-          </div>
-        </div>
-      </footer>
+      <Footer />
+
 
     </main>
   );
