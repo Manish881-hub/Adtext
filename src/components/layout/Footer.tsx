@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export function Footer() {
     return (
         <footer className="py-8 px-6 lg:px-12 border-t border-border">
@@ -15,8 +16,8 @@ export function Footer() {
                 <nav className="flex items-center gap-6 text-sm text-muted-foreground">
                     <Link href="/publishers" className="hover:text-foreground transition-colors">Publishers</Link>
                     <Link href="/advertisers" className="hover:text-foreground transition-colors">Advertisers</Link>
-                    <a href="#" className="hover:text-foreground transition-colors">Docs</a>
-                    <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+                    <Link href="/docs" className="hover:text-foreground transition-colors">Docs</Link>
+                    <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
                     <a href="mailto:hello@adstext.ai" className="hover:text-foreground transition-colors">Get in touch</a>
                 </nav>
             </div>

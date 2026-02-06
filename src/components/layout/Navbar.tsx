@@ -14,6 +14,7 @@ import {
 export function Navbar() {
     const pathname = usePathname();
     const isPublisher = pathname?.startsWith("/publishers");
+    const isAdvertiser = pathname?.startsWith("/advertisers");
 
     return (
         <div className="flex flex-col">
@@ -33,13 +34,13 @@ export function Navbar() {
                                 <SheetContent side="left" className="w-[300px] sm:w-[400px]">
                                     <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
                                     <div className="flex flex-col gap-8 mt-8">
-                                        <Link href="/" className="text-xl font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
-                                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                                        <Link href="/" className="text-xl font-heading font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
+                                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm font-mono">
                                                 A
                                             </div>
                                             Adstext
                                         </Link>
-                                        <div className="flex flex-col gap-4 text-lg font-medium">
+                                        <div className="flex flex-col gap-4 text-lg font-medium font-sans">
                                             <Link
                                                 href="/publishers"
                                                 className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors", isPublisher && "text-neutral-900 dark:text-white font-bold")}
@@ -48,7 +49,7 @@ export function Navbar() {
                                             </Link>
                                             <Link
                                                 href="/advertisers"
-                                                className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors")}
+                                                className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors", isAdvertiser && "text-neutral-900")}
                                             >
                                                 Advertisers
                                             </Link>
@@ -63,8 +64,8 @@ export function Navbar() {
                                 </SheetContent>
                             </Sheet>
                         </div>
-                        <Link href="/" className="text-xl font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
-                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                        <Link href="/" className="text-xl font-heading font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
+                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm font-mono">
                                 A
                             </div>
                             Adstext
@@ -72,7 +73,7 @@ export function Navbar() {
                     </div>
 
                     {/* Center Section: Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8 text-sm font-medium absolute left-1/2 -translate-x-1/2">
+                    <div className="hidden md:flex items-center gap-8 text-sm font-medium font-heading absolute left-1/2 -translate-x-1/2">
                         <Link
                             href="/publishers"
                             className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors", isPublisher && "text-neutral-900 dark:text-white font-semibold")}
@@ -81,7 +82,7 @@ export function Navbar() {
                         </Link>
                         <Link
                             href="/advertisers"
-                            className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors")}
+                            className={cn("text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors", isAdvertiser && "text-neutral-900 dark:text-white font-semibold")}
                         >
                             Advertisers
                         </Link>
@@ -89,10 +90,10 @@ export function Navbar() {
 
                     {/* Right Section: Login */}
                     <div className="flex items-center gap-4">
-                        <Link href="/login" className="hidden md:block text-sm font-medium px-5 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors uppercase tracking-wide text-xs">
+                        <Link href="/login" className="hidden md:block text-xs font-mono font-medium px-5 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors uppercase tracking-wide">
                             Log in
                         </Link>
-                        <Link href="/login" className="md:hidden text-sm font-medium px-4 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors uppercase tracking-wide text-xs">
+                        <Link href="/login" className="md:hidden text-xs font-mono font-medium px-4 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors uppercase tracking-wide">
                             Log in
                         </Link>
                     </div>

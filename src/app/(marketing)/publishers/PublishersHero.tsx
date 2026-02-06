@@ -15,6 +15,18 @@ const features = [
     { id: "characters", label: "Virtual AI characters", video: "/animation/deepai.mp4" },
 ];
 
+const heroVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut" as const
+        }
+    }
+};
+
 
 
 export default function PublishersHero() {
@@ -30,26 +42,60 @@ export default function PublishersHero() {
         <Section variant="publisher" className="pt-24 pb-12 border-b border-dashed border-neutral-200 dark:border-neutral-800">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
                 {/* Left: Text Content */}
-                <div className="max-w-xl">
-                    <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6 font-medium">
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={heroVariants}
+                    className="max-w-xl"
+                >
+                    <motion.span
+                        className="label-mono mb-4 block"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
                         Monetize your traffic with AI ads
-                    </h2>
-                    <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6 leading-[1.05]">
-                        The largest ad platform for <br />
-                        <span className="text-foreground">Conversational AI publishers</span>
-                    </h1>
-                    <p className="font-serif text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed font-light">
-                        Transform your GenAI app into a revenue engine with native, AI-powered ads. <br className="hidden md:block" />
+                    </motion.span>
+                    <motion.h1
+                        className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.1 }}
+                    >
+                        The largest ad platform for Conversational AI publishers
+                    </motion.h1>
+                    <motion.p
+                        className="text-lg text-foreground mb-2"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        Transform your GenAI app into a revenue engine with native, AI-powered ads.
+                    </motion.p>
+                    <motion.p
+                        className="text-lg text-muted-foreground mb-8"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                    >
                         Monetize your free users with our ad formats powered by LLMs and designed specifically for chat-based interfaces.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    </motion.p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                    >
                         <Link href="/publishers/signup">
-                            <Button className="h-14 px-8 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-bold uppercase tracking-wide shadow-lg shadow-primary/20">
-                                Monetize My Traffic <ArrowRight className="ml-2 w-4 h-4" />
+                            <Button
+                                size="lg"
+                                className="group font-mono uppercase tracking-wider text-sm"
+                            >
+                                Monetize my traffic
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 {/* Right: Interactive Video Switcher */}
                 <div className="space-y-8">
