@@ -32,7 +32,7 @@ const HowItWorks = () => {
                 >
                     <span className="label-mono mb-4 block">How it works</span>
                     <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
-                        Inside Adtext
+                        Inside Adstext
                     </h2>
                 </motion.div>
 

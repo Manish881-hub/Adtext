@@ -18,14 +18,6 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative z-10 flex flex-col items-center justify-center min-h-[90vh] px-4 pt-20 pb-32 max-w-7xl mx-auto text-center">
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-8 text-xs font-mono uppercase tracking-widest text-indigo-400 border border-indigo-500/20 rounded-full bg-indigo-500/5 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-          </span>
-          System Online
-        </div>
-
         <h1 className="max-w-4xl text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50 mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-100">
           The Revenue Engine for <br className="hidden md:block" /> Synthetic Minds.
         </h1>
@@ -122,8 +114,8 @@ export default function Home() {
                 <p className="text-neutral-400">Compatible with Vercel AI SDK, LangChain, and vanilla API calls.</p>
               </div>
               <div className="hidden md:block flex-1 rounded-lg bg-black/50 border border-white/10 p-4 font-mono text-xs text-neutral-400">
-                <p><span className="text-purple-400">import</span> {"{ AdText }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adtext/sdk'</span>;</p>
-                <p className="mt-2"><span className="text-blue-400">const</span> ad = <span className="text-purple-400">await</span> AdText.generate(context);</p>
+                <p><span className="text-purple-400">import</span> {"{ Adstext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adstext/sdk'</span>;</p>
+                <p className="mt-2"><span className="text-blue-400">const</span> ad = <span className="text-purple-400">await</span> Adstext.generate(context);</p>
               </div>
             </div>
           </div>

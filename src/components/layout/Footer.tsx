@@ -9,7 +9,7 @@ export function Footer() {
                         <path d="M4 4L12 20L20 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M7 12H17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                     </svg>
-                    Adtext
+                    Adstext
                 </Link>
 
                 <nav className="flex items-center gap-6 text-sm text-muted-foreground">
@@ -17,7 +17,7 @@ export function Footer() {
                     <Link href="/advertisers" className="hover:text-foreground transition-colors">Advertisers</Link>
                     <a href="#" className="hover:text-foreground transition-colors">Docs</a>
                     <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-                    <a href="mailto:hello@adtext.ai" className="hover:text-foreground transition-colors">Get in touch</a>
+                    <a href="mailto:hello@adstext.ai" className="hover:text-foreground transition-colors">Get in touch</a>
                 </nav>
             </div>
         </footer>

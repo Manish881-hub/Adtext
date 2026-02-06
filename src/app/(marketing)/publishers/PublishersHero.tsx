@@ -15,19 +15,16 @@ const features = [
     { id: "characters", label: "Virtual AI characters", video: "/animation/deepai.mp4" },
 ];
 
-const publishers = [
-    { name: "CapCut", logo: "CapCut" },
-    { name: "Cosmic Latte", logo: "Cosmic Latte" },
-    { name: "Dorian", logo: "DORIAN" },
-    { name: "GOG.com", logo: "GOG COM" },
-    { name: "Hornet", logo: "HORNET" },
-    { name: "NetEase Games", logo: "NetEase Games" },
-    { name: "CD Projekt", logo: "CD PROJEKT" },
-    { name: "SuperScale", logo: "SUPER SCALE" },
-];
+
 
 export default function PublishersHero() {
     const [activeFeature, setActiveFeature] = useState(features[0]);
+
+    const handleVideoEnd = () => {
+        const currentIndex = features.findIndex((f) => f.id === activeFeature.id);
+        const nextIndex = (currentIndex + 1) % features.length;
+        setActiveFeature(features[nextIndex]);
+    };
 
     return (
         <Section variant="publisher" className="pt-24 pb-12 border-b border-dashed border-neutral-200 dark:border-neutral-800">
@@ -63,9 +60,9 @@ export default function PublishersHero() {
                                 key={activeFeature.id}
                                 src={activeFeature.video}
                                 autoPlay
-                                loop
                                 muted
                                 playsInline
+                                onEnded={handleVideoEnd}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
@@ -97,13 +94,46 @@ export default function PublishersHero() {
 
             {/* Bottom: Brand Grid */}
             <div className="pt-12 border-t border-dashed border-neutral-200 dark:border-neutral-800">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                    {publishers.map((pub) => (
-                        <div key={pub.name} className="flex items-center justify-center p-4">
-                            {/* Placeholder for Logos - using text for now if images aren't available, or generic styling */}
-                            <span className="font-bold text-xl font-sans tracking-tight text-foreground">{pub.logo}</span>
-                        </div>
-                    ))}
+                <div className="grid lg:grid-cols-2">
+                    {/* Left: Logos Grid */}
+                    <div className="grid grid-cols-4 grid-rows-2 [&>div]:border-r [&>div]:border-b [&>div]:border-dashed [&>div]:border-neutral-200 dark:[&>div]:border-neutral-800 [&>div:nth-child(4n)]:border-r-0 lg:[&>div:nth-child(4n)]:border-r [&>div:nth-last-child(-n+4)]:border-b-0 lg:[&>div:nth-last-child(-n+4)]:border-b-0">
+                        {[
+                            { name: "CapCut", logo: "/logo/capcut.svg" },
+                            { name: "Cosmic Latte", logo: "/logo/cosmiclatte.svg" },
+                            { name: "Dorian", logo: "/logo/dorian.svg" },
+                            { name: "GOG.com", logo: "/logo/gog.svg" },
+                            { name: "Hornet", logo: "/logo/hornet.svg" },
+                            { name: "NetEase Games", logo: "/logo/netease.svg" },
+                            { name: "CD Projekt", logo: "/logo/cdprojekt.svg" },
+                            { name: "SuperScale", logo: "/logo/superscale.svg" },
+                        ].map((pub) => (
+                            <div key={pub.name} className="flex items-center justify-center p-6 h-32 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
+                                <img src={pub.logo} alt={`${pub.name} logo`} className="max-w-full max-h-12 opacity-60 hover:opacity-100 transition-opacity" />
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Right: Text Grid */}
+                    <div className="grid grid-cols-2 grid-rows-2 [&>div]:border-r [&>div]:border-b [&>div]:border-dashed [&>div]:border-neutral-200 dark:[&>div]:border-neutral-800 [&>div:nth-child(2n)]:border-r-0 [&>div:nth-last-child(-n+2)]:border-b-0">
+                        {[
+                            { label: "AI search", highlight: true },
+                            { label: "Virtual AI characters" },
+                            { label: "Chat" },
+                            { label: "Support & sales" },
+                        ].map((item, i) => (
+                            <div key={i} className="flex flex-col items-center justify-center p-8 h-32 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
+                                {item.highlight ? (
+                                    <span className="px-4 py-2 rounded-full bg-[#2F3545] text-white text-sm font-medium">
+                                        {item.label}
+                                    </span>
+                                ) : (
+                                    <span className="text-lg text-muted-foreground font-medium text-center">
+                                        {item.label}
+                                    </span>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </Section>

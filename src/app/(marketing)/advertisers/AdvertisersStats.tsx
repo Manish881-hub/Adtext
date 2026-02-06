@@ -14,7 +14,7 @@ const stats = [
     },
     {
         title: "2-4x the performance of other channels",
-        description: "Thanks to LLMs, GenAI apps can routinely generate 3-5% CTR across a wide spectrum of advertiser categories. With our competitive pricing and high performance, Adtext can deliver 2-4x better CPA or CPI than traditional advertising channels."
+        description: "Thanks to LLMs, GenAI apps can routinely generate 3-5% CTR across a wide spectrum of advertiser categories. With our competitive pricing and high performance, Adstext can deliver 2-4x better CPA or CPI than traditional advertising channels."
     }
 ];
 

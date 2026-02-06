@@ -37,7 +37,7 @@ export function Navbar() {
                                             <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                                 A
                                             </div>
-                                            Adtext
+                                            Adstext
                                         </Link>
                                         <div className="flex flex-col gap-4 text-lg font-medium">
                                             <Link
@@ -67,7 +67,7 @@ export function Navbar() {
                             <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                 A
                             </div>
-                            Adtext
+                            Adstext
                         </Link>
                     </div>
 
