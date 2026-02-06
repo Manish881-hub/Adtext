@@ -178,6 +178,13 @@
     }
 }
 
+@layer utilities {
+    .label-mono {
+        @apply font-mono text-xs uppercase tracking-[0.2em] font-medium;
+    }
+}
+
+
 @keyframes marquee {
     0% {
         transform: translateX(0);
