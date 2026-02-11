@@ -79,7 +79,7 @@ const AdvertisersReach = () => {
                         className="lg:col-span-7 space-y-8"
                     >
                         {/* Video Display - Larger Aspect Ratio to match screenshot */}
-                        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] bg-white rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 ring-1 ring-neutral-200 dark:ring-neutral-800 flex items-center justify-center">
+                        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] bg-background rounded-2xl overflow-hidden shadow-2xl border border-border ring-1 ring-border flex items-center justify-center">
                             <AnimatePresence mode="wait">
                                 <motion.video
                                     key={activeFeature.id}

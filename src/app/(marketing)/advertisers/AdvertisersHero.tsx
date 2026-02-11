@@ -47,7 +47,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            Target your ads with more context
+                            Reach users when intent is highest
                         </motion.span>
                         <motion.h1
                             className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6"
@@ -55,7 +55,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                         >
-                            The largest ad platform for AI chatbots
+                            The high-intent ad platform for Generative AI
                         </motion.h1>
                         <motion.p
                             className="text-lg text-foreground mb-2"
@@ -63,7 +63,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            Adtext leverages LLMs to deliver unique ad formats tailored to GenAI applications.
+                            Ditch the tracking pixels. Adtext uses conversation context to deliver ads that align perfectly with user intent.
                         </motion.p>
                         <motion.p
                             className="text-lg text-muted-foreground mb-8"
@@ -71,7 +71,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            Tap into the next major consumer wave and begin advertising in GenAI apps with Adtext.
+                            Bid on openRTB-compatible requests enriched with deep semantic context, not personal data.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
