@@ -64,10 +64,11 @@ export function Navbar() {
                                 </SheetContent>
                             </Sheet>
                         </div>
-                        <Link href="/" className="text-xl font-heading font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
-                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm font-mono">
-                                A
-                            </div>
+                        <Link href="/" className="flex items-center gap-2 text-xl font-heading font-bold tracking-tight text-foreground">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L12 20L20 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M7 12H17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                            </svg>
                             Adtext
                         </Link>
                     </div>
