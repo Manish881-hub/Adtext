@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Section } from "@/components/ui/section";
 import { ArrowRight, Gamepad2, ShoppingBag, Heart, Cpu, Plane, Dumbbell } from "lucide-react";
 
 const industries = [
@@ -45,7 +46,7 @@ const industries = [
 
 const AdvertisersIndustries = () => {
   return (
-    <section className="py-20 px-6 lg:px-12 bg-muted/30">
+    <Section variant="advertiser" className="py-20 px-6 lg:px-12 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -98,7 +99,7 @@ const AdvertisersIndustries = () => {
           </Button>
         </motion.div>
       </div>
-    </section>
+    </Section>
   );
 };
 

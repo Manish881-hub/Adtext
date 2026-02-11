@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Section } from "@/components/ui/section";
 import { ArrowRight } from "lucide-react";
 
 
@@ -33,7 +34,7 @@ const mockupVariants = {
 
 const AdvertisersHero = () => {
     return (
-        <section className="py-16 lg:py-24 px-6 lg:px-12 overflow-hidden">
+        <Section variant="advertiser" className="py-16 lg:py-24 px-6 lg:px-12 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div
@@ -88,7 +89,7 @@ const AdvertisersHero = () => {
 
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 

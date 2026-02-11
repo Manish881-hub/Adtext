@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Section } from "@/components/ui/section";
 import { staggerContainer, staggerItem, fadeInUp } from "@/hooks/useScrollAnimation";
 
 const stats = [
@@ -20,7 +21,7 @@ const stats = [
 
 const AdvertisersStats = () => {
     return (
-        <section className="py-20 px-6 lg:px-12 bg-muted/30">
+        <Section variant="advertiser" className="py-20 px-6 lg:px-12 bg-muted/30">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial="hidden"
@@ -56,7 +57,7 @@ const AdvertisersStats = () => {
                     ))}
                 </motion.div>
             </div>
-        </section>
+        </Section>
     );
 };
 

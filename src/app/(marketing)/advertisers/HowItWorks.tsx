@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Section } from "@/components/ui/section";
 import { ArrowRight, Scan, Target, Sparkles } from "lucide-react";
 import { staggerContainer, staggerItem, fadeInUp } from "@/hooks/useScrollAnimation";
 
@@ -24,7 +25,7 @@ const steps = [
 
 const HowItWorks = () => {
     return (
-        <section className="py-20 px-6 lg:px-12">
+        <Section variant="advertiser" className="py-20 px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial="hidden"
@@ -92,7 +93,7 @@ const HowItWorks = () => {
                     </Button>
                 </motion.div>
             </div>
-        </section>
+        </Section>
     );
 };
 

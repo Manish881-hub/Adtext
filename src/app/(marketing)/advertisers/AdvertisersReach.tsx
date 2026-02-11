@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerItem } from "@/hooks/useScrollAnimation";
+import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
 const reachData = [
@@ -27,7 +28,7 @@ const AdvertisersReach = () => {
     const [activeFeature, setActiveFeature] = useState(features[0]);
 
     return (
-        <section className="py-20 px-6 lg:px-12">
+        <Section variant="advertiser" className="py-20 px-6 lg:px-12">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
                     {/* Left Column: Content (Compromised width) */}
@@ -117,7 +118,7 @@ const AdvertisersReach = () => {
                     </motion.div>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 
