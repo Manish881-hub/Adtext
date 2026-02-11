@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight, Bot, Cpu, Zap, Globe, Layers, Sparkles } from "lucide-react";
+import { ArrowRight, Bot, Cpu, Zap, Globe, Layers, Sparkles, Shield, MessageSquare } from "lucide-react";
 import * as React from "react";
 
 // Mock Data for ticker
@@ -8,7 +8,7 @@ const MODELS = ["Nano Banana Pro", "Flux 2", "gpt-image-1.5", "Seedream", "Claud
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505] text-white overflow-x-hidden relative selection:bg-indigo-500/30 selection:text-indigo-200">
+    <main className="dark min-h-screen bg-[#050505] text-white overflow-x-hidden relative selection:bg-indigo-500/30 selection:text-indigo-200">
 
       {/* Background Noise/Grid Effect */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.03]"
@@ -16,15 +16,14 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col items-center justify-center min-h-[90vh] px-4 pt-20 pb-32 max-w-7xl mx-auto text-center">
+      <section className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-5rem)] px-4 pt-32 pb-20 md:pt-20 md:pb-32 max-w-7xl mx-auto text-center">
 
         <h1 className="max-w-4xl text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50 mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-100">
-          The Revenue Engine for <br className="hidden md:block" /> Synthetic Minds.
+          The Privacy‑Native Monetization Layer <br className="hidden md:block" /> for Generative AI.
         </h1>
 
         <p className="max-w-2xl text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-200">
-          Monetize your AI infrastructure without breaking the immersion.
-          Native ad formats powered by LLMs, designed for the next generation of interfaces.
+          We enable Generative AI platforms to monetize through non‑intrusive, contextual sponsored content — without tracking users.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-300">
@@ -54,16 +53,16 @@ export default function Home() {
       <section className="relative z-10 max-w-7xl mx-auto px-4 py-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
 
-          {/* Feature 1: The Core */}
+          {/* Feature 1: Privacy First */}
           <div className="md:col-span-2 relative group overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-neutral-900/50 to-neutral-900/10 backdrop-blur-xl p-8 hover:border-indigo-500/30 transition-colors duration-500">
             <div className="absolute inset-0 bg-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mb-4 border border-indigo-500/20">
-                  <Cpu className="w-6 h-6 text-indigo-400" />
+                  <Shield className="w-6 h-6 text-indigo-400" />
                 </div>
-                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Contextual Intelligence</h3>
-                <p className="text-neutral-400 max-w-md">Our engine analyzes conversation depth, tone, and intent in real-time to deliver adds that feel like helpful suggestions, not interruptions.</p>
+                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Privacy-Native</h3>
+                <p className="text-neutral-400 max-w-md">Targeting based on conversation intent, not user identity. No cookies, no fingerprinting, and no surveillance. Built for the privacy-first era.</p>
               </div>
               {/* Abstract visual */}
               <div className="w-full h-32 bg-gradient-to-r from-indigo-500/10 to-transparent rounded-xl border border-indigo-500/10 flex items-center px-4 gap-2">
@@ -74,44 +73,44 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Feature 2: Speed */}
+          {/* Feature 2: Contextual Intelligence */}
           <div className="md:col-span-1 relative group overflow-hidden rounded-3xl border border-white/10 bg-neutral-900/30 backdrop-blur-xl p-8 hover:border-cyan-500/30 transition-colors duration-500">
             <div className="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div className="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-4 border border-cyan-500/20">
-                <Zap className="w-6 h-6 text-cyan-400" />
+                <Cpu className="w-6 h-6 text-cyan-400" />
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Sub-50ms Latency</h3>
-                <p className="text-neutral-400 text-sm">Engineered for the speed of thought. Zero impact on your token generation streaming.</p>
+                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Contextual Intelligence</h3>
+                <p className="text-neutral-400 text-sm">Our engine analyzes high-level intent signals in real-time to deliver adds that feel like helpful recommendations.</p>
               </div>
             </div>
           </div>
 
-          {/* Feature 3: Global Reach */}
+          {/* Feature 3: Native Formats */}
           <div className="md:col-span-1 relative group overflow-hidden rounded-3xl border border-white/10 bg-neutral-900/30 backdrop-blur-xl p-8 hover:border-emerald-500/30 transition-colors duration-500">
             <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-4 border border-emerald-500/20">
-                <Globe className="w-6 h-6 text-emerald-400" />
+                <MessageSquare className="w-6 h-6 text-emerald-400" />
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Global Demand</h3>
-                <p className="text-neutral-400 text-sm">Access thousands of premium advertisers looking for high-intent AI traffic.</p>
+                <h3 className="text-2xl font-heading font-semibold text-white mb-2">LLM-Native Formats</h3>
+                <p className="text-neutral-400 text-sm">Ads designed for chat, search, and copilots. Non-intrusive and optimized for user experience.</p>
               </div>
             </div>
           </div>
 
-          {/* Feature 4: Integration */}
+          {/* Feature 4: OpenRTB & Integration */}
           <div className="md:col-span-2 relative group overflow-hidden rounded-3xl border border-white/10 bg-neutral-900/30 backdrop-blur-xl p-8 hover:border-orange-500/30 transition-colors duration-500">
             <div className="absolute inset-0 bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative z-10 h-full flex flex-row items-center gap-8">
               <div className="flex-1">
                 <div className="w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center mb-4 border border-orange-500/20">
-                  <Layers className="w-6 h-6 text-orange-400" />
+                  <Globe className="w-6 h-6 text-orange-400" />
                 </div>
-                <h3 className="text-2xl font-heading font-semibold text-white mb-2">One-Line Integration</h3>
-                <p className="text-neutral-400">Compatible with Vercel AI SDK, LangChain, and vanilla API calls.</p>
+                <h3 className="text-2xl font-heading font-semibold text-white mb-2">Global Demand</h3>
+                <p className="text-neutral-400">Access thousands of premium advertisers. Advertisers bid using openRTB extensions for AI context.</p>
               </div>
               <div className="hidden md:block flex-1 rounded-lg bg-black/50 border border-white/10 p-4 font-mono text-xs text-neutral-400">
                 <p><span className="text-purple-400">import</span> {"{ Adtext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adstext/sdk'</span>;</p>
