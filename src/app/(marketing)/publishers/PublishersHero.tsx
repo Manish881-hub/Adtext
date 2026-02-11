@@ -63,7 +63,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        The largest ad platform for Conversational AI publishers
+                        The monetization layer for privacy-first AI platforms
                     </motion.h1>
                     <motion.p
                         className="text-lg text-foreground mb-2"
@@ -71,7 +71,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Transform your GenAI app into a revenue engine with native, AI-powered ads.
+                        We enable Generative AI platforms to monetize through non‑intrusive, contextual sponsored content — without tracking users.
                     </motion.p>
                     <motion.p
                         className="text-lg text-muted-foreground mb-8"
@@ -79,7 +79,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        Monetize your free users with our ad formats powered by LLMs and designed specifically for chat-based interfaces.
+                        Avoid cookies, fingerprinting, and cross‑session tracking. Just pure, intent-based monetization designed for chat interfaces.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

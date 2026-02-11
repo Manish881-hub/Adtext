@@ -17,12 +17,12 @@ export default function PublishersCTA() {
                     </Link>
                 </div>
                 {/* Advertiser CTA */}
-                <div className="bg-[#4338CA] py-24 px-8 text-center flex flex-col items-center justify-center relative overflow-hidden">
+                <div className="bg-publisher-accent py-24 px-8 text-center flex flex-col items-center justify-center relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10 bg-[url('/pattern.png')]"></div>
                     <h2 className="font-sans text-2xl font-bold text-white mb-8">Are you an advertiser?</h2>
                     <Link href="/advertisers">
-                        <Button className="h-12 px-8 rounded-full bg-white text-[#4338CA] hover:bg-neutral-50 font-bold text-xs uppercase tracking-wide">
-                            Adstext for Advertisers <span className="ml-2">→</span>
+                        <Button className="h-12 px-8 rounded-full bg-white text-publisher-accent hover:bg-neutral-50 font-bold text-xs uppercase tracking-wide">
+                            Adtext for Advertisers <span className="ml-2">→</span>
                         </Button>
                     </Link>
                 </div>

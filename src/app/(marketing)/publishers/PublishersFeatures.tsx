@@ -40,10 +40,13 @@ export default function PublishersFeatures() {
                         variants={fadeInUp}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="label-mono mb-4 block">Mix & match formats that fit your app</span>
-                        <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-8">
-                            Our ad formats
+                        <span className="label-mono mb-4 block">Native formats that respect the conversation</span>
+                        <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
+                            Ads that feel like recommendations
                         </h2>
+                        <p className="text-muted-foreground text-lg mb-8 max-w-xl">
+                            Our system extracts high‑level intent signals on the client side to create contextual ad slots inside the response. No personal data leaves the device.
+                        </p>
 
                         <motion.div
                             initial="hidden"
@@ -80,7 +83,7 @@ export default function PublishersFeatures() {
                         viewport={{ once: true }}
                         variants={fadeInRight}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-chat-dark rounded-2xl p-6 shadow-xl"
+                        className="bg-neutral-900 rounded-2xl p-6 shadow-xl"
                     >
                         {/* Chat demo */}
                         <motion.div

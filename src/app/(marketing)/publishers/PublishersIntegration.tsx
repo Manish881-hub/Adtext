@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
 const CodeSnippet = ({ className }: { className?: string }) => (
-    <div className={cn("font-mono text-xs md:text-sm leading-relaxed bg-[#0F172A] text-slate-300 p-6 md:p-8 rounded-xl border border-slate-800 overflow-x-auto shadow-2xl relative", className)}>
+    <div className={cn("font-mono text-xs md:text-sm leading-relaxed bg-neutral-950 text-neutral-400 p-6 md:p-8 rounded-xl border border-neutral-800 overflow-x-auto shadow-2xl relative", className)}>
         <div className="absolute top-4 right-4 flex gap-1">
             <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
             <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
@@ -34,7 +34,7 @@ const CodeSnippet = ({ className }: { className?: string }) => (
 
 export default function PublishersIntegration() {
     return (
-        <Section variant="publisher" className="bg-[#1E293B] text-white border-b border-slate-700">
+        <Section variant="publisher" className="bg-neutral-900 text-white border-b border-neutral-800">
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                 <div className="order-2 lg:order-2">
                     <CodeSnippet />
