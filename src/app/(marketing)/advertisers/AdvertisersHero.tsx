@@ -63,7 +63,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            Adstext leverages LLMs to deliver unique ad formats tailored to GenAI applications.
+                            Adtext leverages LLMs to deliver unique ad formats tailored to GenAI applications.
                         </motion.p>
                         <motion.p
                             className="text-lg text-muted-foreground mb-8"
@@ -71,7 +71,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            Tap into the next major consumer wave and begin advertising in GenAI apps with Adstext.
+                            Tap into the next major consumer wave and begin advertising in GenAI apps with Adtext.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

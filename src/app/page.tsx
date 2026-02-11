@@ -114,8 +114,8 @@ export default function Home() {
                 <p className="text-neutral-400">Compatible with Vercel AI SDK, LangChain, and vanilla API calls.</p>
               </div>
               <div className="hidden md:block flex-1 rounded-lg bg-black/50 border border-white/10 p-4 font-mono text-xs text-neutral-400">
-                <p><span className="text-purple-400">import</span> {"{ Adstext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adstext/sdk'</span>;</p>
-                <p className="mt-2"><span className="text-blue-400">const</span> ad = <span className="text-purple-400">await</span> Adstext.generate(context);</p>
+                <p><span className="text-purple-400">import</span> {"{ Adtext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adstext/sdk'</span>;</p>
+                <p className="mt-2"><span className="text-blue-400">const</span> ad = <span className="text-purple-400">await</span> Adtext.generate(context);</p>
               </div>
             </div>
           </div>

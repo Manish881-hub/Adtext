@@ -9,7 +9,7 @@ export default function PublishersCTA() {
                 {/* Publisher CTA */}
                 <div className="bg-primary py-24 px-8 text-center flex flex-col items-center justify-center">
                     <h2 className="font-sans text-2xl font-bold text-primary-foreground mb-2">Partner with us</h2>
-                    <p className="font-serif text-primary-foreground/80 mb-8 max-w-sm">Get in touch, and we will set you up with Adstext.</p>
+                    <p className="font-serif text-primary-foreground/80 mb-8 max-w-sm">Get in touch, and we will set you up with Adtext.</p>
                     <Link href="/contact">
                         <Button className="h-12 px-8 rounded-full bg-background text-primary hover:bg-background/90 font-bold text-xs uppercase tracking-wide">
                             Contact Us <span className="ml-2">→</span>

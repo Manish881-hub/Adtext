@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Adstext - Contextual Ads for AI Apps",
+    title: "Adtext - Contextual Ads for AI Apps",
     description: "The ad platform built for AI chatbots. Monetize your AI app without hurting user experience.",
 };
 

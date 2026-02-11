@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import LogoStrip from "./LogoStrip";
 
 const features = [
     { id: "search", label: "AI search", video: "/animation/Ai-search.mp4" },
@@ -139,48 +140,8 @@ export default function PublishersHero() {
             </div>
 
             {/* Bottom: Brand Grid */}
-            <div className="pt-12 border-t border-dashed border-neutral-200 dark:border-neutral-800">
-                <div className="grid lg:grid-cols-2">
-                    {/* Left: Logos Grid */}
-                    <div className="grid grid-cols-4 grid-rows-2 [&>div]:border-r [&>div]:border-b [&>div]:border-dashed [&>div]:border-neutral-200 dark:[&>div]:border-neutral-800 [&>div:nth-child(4n)]:border-r-0 lg:[&>div:nth-child(4n)]:border-r [&>div:nth-last-child(-n+4)]:border-b-0 lg:[&>div:nth-last-child(-n+4)]:border-b-0">
-                        {[
-                            { name: "CapCut", logo: "/logo/capcut.svg" },
-                            { name: "Cosmic Latte", logo: "/logo/cosmiclatte.svg" },
-                            { name: "Dorian", logo: "/logo/dorian.svg" },
-                            { name: "GOG.com", logo: "/logo/gog.svg" },
-                            { name: "Hornet", logo: "/logo/hornet.svg" },
-                            { name: "NetEase Games", logo: "/logo/netease.svg" },
-                            { name: "CD Projekt", logo: "/logo/cdprojekt.svg" },
-                            { name: "SuperScale", logo: "/logo/superscale.svg" },
-                        ].map((pub) => (
-                            <div key={pub.name} className="flex items-center justify-center p-6 h-32 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
-                                <img src={pub.logo} alt={`${pub.name} logo`} className="max-w-full max-h-12 opacity-60 hover:opacity-100 transition-opacity" />
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Right: Text Grid */}
-                    <div className="grid grid-cols-2 grid-rows-2 [&>div]:border-r [&>div]:border-b [&>div]:border-dashed [&>div]:border-neutral-200 dark:[&>div]:border-neutral-800 [&>div:nth-child(2n)]:border-r-0 [&>div:nth-last-child(-n+2)]:border-b-0">
-                        {[
-                            { label: "AI search", highlight: true },
-                            { label: "Virtual AI characters" },
-                            { label: "Chat" },
-                            { label: "Support & sales" },
-                        ].map((item, i) => (
-                            <div key={i} className="flex flex-col items-center justify-center p-8 h-32 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
-                                {item.highlight ? (
-                                    <span className="px-4 py-2 rounded-full bg-[#2F3545] text-white text-sm font-medium">
-                                        {item.label}
-                                    </span>
-                                ) : (
-                                    <span className="text-lg text-muted-foreground font-medium text-center">
-                                        {item.label}
-                                    </span>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            <div className="pt-12">
+                <LogoStrip />
             </div>
         </Section>
     );

@@ -10,7 +10,7 @@ export function Footer() {
                         <path d="M4 4L12 20L20 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M7 12H17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                     </svg>
-                    Adstext
+                    Adtext
                 </Link>
 
                 <nav className="flex items-center gap-6 text-sm text-muted-foreground">
