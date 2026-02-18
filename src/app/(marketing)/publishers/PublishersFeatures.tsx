@@ -94,22 +94,22 @@ export default function PublishersFeatures() {
                             className="space-y-4"
                         >
                             <motion.div variants={staggerItem} className="flex gap-3">
-                                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-xs font-medium">
+                                <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-white text-xs font-medium">
                                     U
                                 </div>
                                 <div className="flex-1">
-                                    <p className="text-muted-foreground text-xs mb-1">User</p>
-                                    <p className="text-secondary-foreground text-sm">How can I water my plant when I'm away?</p>
+                                    <p className="text-zinc-400 text-xs mb-1">User</p>
+                                    <p className="text-white text-sm">How can I water my plant when I'm away?</p>
                                 </div>
                             </motion.div>
 
                             <motion.div variants={staggerItem} className="flex gap-3">
-                                <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs">
+                                <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xs">
                                     🌱
                                 </div>
                                 <div className="flex-1">
-                                    <p className="text-muted-foreground text-xs mb-1">Plant bot</p>
-                                    <p className="text-secondary-foreground text-sm">
+                                    <p className="text-zinc-400 text-xs mb-1">Plant bot</p>
+                                    <p className="text-white text-sm">
                                         You can try to fill a water bottle, poke holes in the cap, invert and bury it slightly in the plant's soil.
                                         The water will slowly drip out, watering your plant.
                                     </p>
@@ -119,15 +119,18 @@ export default function PublishersFeatures() {
                             <motion.div
                                 variants={staggerItem}
                                 whileHover={{ scale: 1.02 }}
-                                className="bg-primary/20 border border-primary/30 rounded-lg p-4 ml-11 cursor-pointer"
+                                className="bg-zinc-700 border-2 border-cyan-500/50 rounded-xl p-4 ml-11 cursor-pointer shadow-lg shadow-cyan-500/10"
                             >
-                                <p className="text-primary text-xs font-medium mb-1">Suggestion from Adtext</p>
-                                <p className="text-secondary-foreground text-sm">
+                                <div className="flex items-center justify-between mb-2">
+                                    <p className="text-cyan-400 text-xs font-medium">Suggestion from Adtext</p>
+                                    <span className="text-xs text-zinc-500">Sponsored</span>
+                                </div>
+                                <p className="text-zinc-200 text-sm">
                                     If you don't want to use a DIY solution you can purchase{" "}
-                                    <span className="text-primary underline cursor-pointer hover:text-primary/80 transition-colors">Plant Life Support</span>,
+                                    <span className="text-cyan-400 underline cursor-pointer hover:text-cyan-300 transition-colors">Plant Life Support</span>,
                                     an automatic watering system for...
                                 </p>
-                                <p className="text-muted-foreground text-xs mt-2">amazon.com</p>
+                                <p className="text-zinc-500 text-xs mt-2">amazon.com</p>
                             </motion.div>
                         </motion.div>
                     </motion.div>

@@ -25,8 +25,11 @@ const ChatMockup = ({ variant = "default", className }: ChatMockupProps) => {
                     </div>
                 </div>
                 {variant === "advertisers" && (
-                    <div className="bg-banner/5 border border-banner/10 p-4 rounded-xl">
-                        <div className="text-banner-link font-medium mb-1 text-sm">Sponsored</div>
+                    <div className="bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-4 rounded-xl shadow-sm">
+                        <div className="flex items-center justify-between mb-1">
+                            <div className="text-primary font-medium text-sm">Sponsored</div>
+                            <span className="text-xs text-muted-foreground">Ad</span>
+                        </div>
                         <div className="text-foreground text-sm">Discover how adstext can help you reach more customers in AI apps.</div>
                     </div>
                 )}
