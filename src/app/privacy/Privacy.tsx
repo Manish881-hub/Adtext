@@ -14,11 +14,11 @@ const Privacy = () => {
                     <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
                         Adtext Privacy Policy
                     </h1>
-                    <p className="text-muted-foreground mb-12">Last modified: February 2025</p>
+                    <p className="text-muted-foreground mb-12">Last modified: February 2026</p>
 
                     <div className="prose prose-lg dark:prose-invert max-w-none space-y-8">
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            This Privacy Policy ("Privacy Policy") explains how we collect, use, disclose, and safeguard your information when our customers including advertisers and publishers ("you" or "your" or "Customer") visit our websites including adtext.ai ("Websites") or use any of the services including our platform to generate contextual ads (collectively referred to as the "Services") provided by <strong>Adtext Inc.</strong> ("Company", "we", "our", and "us").
+                            This Privacy Policy ("Privacy Policy") explains how we collect, use, disclose, and safeguard your information when our customers including advertisers and publishers ("you" or "your" or "Customer") visit our websites including adtext.org ("Websites") or use any of the services including our platform to generate contextual ads (collectively referred to as the "Services") provided by <strong>Adtext Inc.</strong> ("Company", "we", "our", and "us").
                         </p>
 
                         <p className="text-muted-foreground leading-relaxed">
@@ -145,7 +145,7 @@ const Privacy = () => {
                                 If you have any questions about this Privacy Policy or our data practices, please contact us at:
                             </p>
                             <p className="text-muted-foreground">
-                                <strong>Email:</strong> privacy@adtext.ai<br />
+                                <strong>Email:</strong> adtextus@gmail.com<br />
                                 <strong>Address:</strong> Adtext Inc., Delaware, United States
                             </p>
                         </section>

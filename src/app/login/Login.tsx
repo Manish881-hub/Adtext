@@ -237,11 +237,11 @@ const Login = () => {
 
                     <p className="text-center text-sm text-muted-foreground">
                         By signing in, you agree to our{" "}
-                        <Link href="/docs/privacy" className="text-primary hover:underline">
+                        <Link href="/privacy" className="text-primary hover:underline">
                             Privacy Policy
                         </Link>{" "}
                         and{" "}
-                        <Link href="/docs" className="text-primary hover:underline">
+                        <Link href="/privacy" className="text-primary hover:underline">
                             Terms of Service
                         </Link>
                     </p>

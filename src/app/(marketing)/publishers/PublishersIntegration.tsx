@@ -10,21 +10,22 @@ const CodeSnippet = ({ className }: { className?: string }) => (
             <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
         </div>
         <div className="mb-4">
-            <span className="text-pink-400">import</span> {"{ AdsProvider, Ad }"} <span className="text-pink-400">from</span> <span className="text-cyan-300">"@adstext/sdk"</span>
+            <span className="text-pink-400">import</span> {"{ AdsProvider, Ad, useAds }"} <span className="text-pink-400">from</span> <span className="text-cyan-300">"adtext"</span>
         </div>
         <div className="mb-4">
             <span className="text-pink-400">const</span> <span className="text-blue-300">App</span> = () ={">"} {"{"} <br />
             &nbsp;&nbsp;<span className="text-slate-500">// Stored messages</span> <br />
-            &nbsp;&nbsp;<span className="text-pink-400">const</span> [messages, setMessages] = useState{"<"}Message[]{">"}([])
+            &nbsp;&nbsp;<span className="text-pink-400">const</span> [messages, setMessages] = useState{"<"}Message[]{">"}([]) <br/>
+            &nbsp;&nbsp;<span className="text-pink-400">const</span> ads = useAd({"{"}format: "carousel", context: messages {"}"});
         </div>
+        
         <div>
             &nbsp;&nbsp;<span className="text-pink-400">return</span> ( <br />
             &nbsp;&nbsp;&nbsp;&nbsp;{"<"}<span className="text-yellow-300">AdsProvider</span> <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">token</span>=<span className="text-cyan-300">'YOUR_TOKEN'</span> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">messages</span>={"{"}messages{"}"} <br />
             &nbsp;&nbsp;&nbsp;&nbsp;{">"} <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"{/* Rest of your application */}"} <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"<"}<span className="text-yellow-300">Ad</span> <span className="text-blue-300">format</span>=<span className="text-cyan-300">"inline"</span> /&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"<"}<span className="text-yellow-300">Chat</span> <span className="text-blue-300"></span> /&gt; <br />
             &nbsp;&nbsp;&nbsp;&nbsp;{"</"}<span className="text-yellow-300">AdsProvider</span>{">"} <br />
             &nbsp;&nbsp;); <br />
             {"}"};

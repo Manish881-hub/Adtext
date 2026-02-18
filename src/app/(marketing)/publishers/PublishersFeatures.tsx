@@ -8,23 +8,23 @@ import { staggerContainer, staggerItem, fadeInUp, fadeInRight } from "@/hooks/us
 const formats = [
     {
         icon: Type,
-        title: "Text",
-        description: "Simple inline text ad displayed as part of a streaming response from the LLM"
+        title: "Inline-Text",
+        description: "Inline text ads seamlessly integrated into the LLM conversation."
     },
     {
         icon: Square,
-        title: "Box",
-        description: "An ad displayed in the conversation flow, with an optional image of a product or brand for added visibility."
+        title: "Product Carousel",
+        description: "Scrollable product or brand images shown directly in the chat flow."
     },
     {
         icon: MessageCircle,
         title: "Query suggestion",
-        description: "Suggestions to continue the conversation with a brand or product"
+        description: "Contextual prompts encouraging users to explore brands or products."
     },
     {
         icon: Image,
         title: "Banner",
-        description: "A full-image ad, tailored to the conversation's context"
+        description: "Full-width image ads matched to the conversation context."
     }
 ];
 

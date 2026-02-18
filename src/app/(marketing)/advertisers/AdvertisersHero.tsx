@@ -56,7 +56,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                         >
-                            The high-intent ad platform for Generative AI
+                            Drive Clicks and <br />  Conversions from <br/> AI Apps
                         </motion.h1>
                         <motion.p
                             className="text-lg text-foreground mb-2"
@@ -64,7 +64,7 @@ const AdvertisersHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            Ditch the tracking pixels. Adtext uses conversation context to deliver ads that align perfectly with user intent.
+                            Show ads that align with what users are talking about — and turn conversations into actions.
                         </motion.p>
                         <motion.p
                             className="text-lg text-muted-foreground mb-8"

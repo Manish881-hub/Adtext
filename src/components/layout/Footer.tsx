@@ -18,7 +18,7 @@ export function Footer() {
                     <Link href="/advertisers" className="hover:text-foreground transition-colors">Advertisers</Link>
                     <Link href="/docs" className="hover:text-foreground transition-colors">Docs</Link>
                     <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
-                    <a href="mailto:hello@adstext.ai" className="hover:text-foreground transition-colors">Get in touch</a>
+                    <a href="mailto:adtextus@gmail.com" className="hover:text-foreground transition-colors">Get in touch</a>
                 </nav>
             </div>
         </footer>

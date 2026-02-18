@@ -18,12 +18,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-5rem)] px-4 pt-32 pb-20 md:pt-20 md:pb-32 max-w-7xl mx-auto text-center">
 
-        <h1 className="max-w-4xl text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50 mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-100">
-          The Privacy‑Native Monetization Layer <br className="hidden md:block" /> for Generative AI.
+        <h1 className="max-w-4xl text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-100">
+          Monetize your <br className="hidden md:block" /> AI Apps Safely.
         </h1>
 
         <p className="max-w-2xl text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-200">
-          We enable Generative AI platforms to monetize through non‑intrusive, contextual sponsored content — without tracking users.
+          We enable GenAI platforms to monetize through non‑intrusive, contextual sponsored content — without tracking users.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both delay-300">
@@ -113,7 +113,7 @@ export default function Home() {
                 <p className="text-neutral-400">Access thousands of premium advertisers. Advertisers bid using openRTB extensions for AI context.</p>
               </div>
               <div className="hidden md:block flex-1 rounded-lg bg-black/50 border border-white/10 p-4 font-mono text-xs text-neutral-400">
-                <p><span className="text-purple-400">import</span> {"{ Adtext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'@adstext/sdk'</span>;</p>
+                <p><span className="text-purple-400">import</span> {"{ Adtext }"} <span className="text-purple-400">from</span> <span className="text-green-400">'adtext'</span>;</p>
                 <p className="mt-2"><span className="text-blue-400">const</span> ad = <span className="text-purple-400">await</span> Adtext.generate(context);</p>
               </div>
             </div>

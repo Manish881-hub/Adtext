@@ -55,7 +55,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        Monetize your traffic with AI ads
+                        Monetize your AI traffic with relevant ads
                     </motion.span>
                     <motion.h1
                         className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6"
@@ -63,7 +63,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        The monetization layer for privacy-first AI platforms
+                        Privacy safe monetization layer for AI platforms
                     </motion.h1>
                     <motion.p
                         className="text-lg text-foreground mb-2"
