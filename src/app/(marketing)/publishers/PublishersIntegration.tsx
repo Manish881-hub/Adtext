@@ -41,9 +41,9 @@ export default function PublishersIntegration() {
                     <CodeSnippet />
                 </div>
                 <div className="order-1 lg:order-1">
-                    <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 mb-6 font-medium">
+                    <span className="label-mono mb-6 block text-cyan-400">
                         How it works
-                    </h2>
+                    </span>
                     <h3 className="font-sans text-4xl md:text-5xl font-bold text-white mb-8">
                         Integrate and <br className="hidden md:block" /> customize
                     </h3>
@@ -58,7 +58,7 @@ export default function PublishersIntegration() {
                         </div>
                     </div>
                     <div className="mt-10">
-                        <Link href="/contact">
+                        <Link href="/publishers/contact">
                             <Button className="h-12 px-8 rounded-full bg-white text-neutral-900 hover:bg-neutral-200 font-bold text-xs uppercase tracking-wide">
                                 Contact Us <span className="ml-2">→</span>
                             </Button>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
@@ -87,16 +88,18 @@ const AdvertisersIndustries = () => {
           ))}
         </div>
 
-        <motion.div
+<motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button className="group font-mono uppercase tracking-wider text-sm">
-            Contact us
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link href="/advertisers/contact">
+            <Button className="group font-mono uppercase tracking-wider text-sm">
+              Contact us
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </Section>

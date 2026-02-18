@@ -21,7 +21,7 @@ export default function PublishersCTA() {
                             <p className="font-serif text-white/80 mb-8 max-w-sm">
                                 Get in touch, and we will set you up with Adtext.
                             </p>
-                            <Link href="/contact">
+                            <Link href="/publishers/contact">
                                 <Button className="h-12 px-8 rounded-full bg-white text-neutral-900 hover:bg-neutral-100 font-bold text-xs uppercase tracking-wider">
                                     Contact Us <span className="ml-2">→</span>
                                 </Button>

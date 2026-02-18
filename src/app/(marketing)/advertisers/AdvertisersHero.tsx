@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
@@ -74,15 +75,23 @@ const AdvertisersHero = () => {
                         >
                             Bid on openRTB-compatible requests enriched with deep semantic context, not personal data.
                         </motion.p>
-                        <motion.div
+<motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                         >
-                            <Button size="lg" className="group font-mono uppercase tracking-wider text-sm">
-                                Get started
-                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                            </Button>
+                            <Link href="/advertisers/contact">
+                                <Button size="lg" className="group font-mono uppercase tracking-wider text-sm">
+                                    Get started
+                                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
+                            <Link href="https://Demo.adtext.org" target="_blank">
+                                <Button size="lg" className="group font-mono uppercase tracking-wider text-sm ml-4">
+                                    See Live Placement
+                                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
                         </motion.div>
                     </motion.div>
 

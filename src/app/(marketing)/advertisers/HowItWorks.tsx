@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
@@ -53,7 +54,7 @@ const HowItWorks = () => {
                             key={step.title}
                             variants={staggerItem}
                             whileHover={{ y: -8 }}
-                            className="text-center group"
+                            className="text-center group relative"
                         >
                             <motion.div
                                 className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-6 group-hover:bg-primary/20 transition-colors"
@@ -87,10 +88,12 @@ const HowItWorks = () => {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="text-center"
                 >
-                    <Button className="group font-mono uppercase tracking-wider text-sm">
-                        Contact us
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    <Link href="/advertisers/contact">
+                        <Button className="group font-mono uppercase tracking-wider text-sm">
+                            Contact us
+                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                    </Link>
                 </motion.div>
             </div>
         </Section>

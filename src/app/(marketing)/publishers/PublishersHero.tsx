@@ -95,6 +95,15 @@ export default function PublishersHero() {
                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
+                        <Link href="https://Demo.adtext.org" target="_blank">
+                            <Button
+                                size="lg"
+                                className="group font-mono uppercase tracking-wider text-sm ml-4"
+                            >
+                                View Live Demo
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                        </Link>
                     </motion.div>
                 </motion.div>
 
