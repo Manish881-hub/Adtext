@@ -85,20 +85,22 @@ export default function PublishersHero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
+                        className="flex flex-col gap-4 sm:flex-row sm:gap-4"
                     >
-                        <Link href="/publishers/contact">
+                        <Link href="/publishers/contact" className="w-full sm:w-auto">
                             <Button
                                 size="lg"
-                                className="group font-mono uppercase tracking-wider text-sm"
+                                className="group font-mono uppercase tracking-wider text-sm w-full sm:w-auto"
                             >
                                 Monetize my traffic
                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                        <Link href="https://Demo.adtext.org" target="_blank">
+                        <Link href="https://Demo.adtext.org" target="_blank" className="w-full sm:w-auto">
                             <Button
                                 size="lg"
-                                className="group font-mono uppercase tracking-wider text-sm ml-4"
+                                variant="outline"
+                                className="group font-mono uppercase tracking-wider text-sm w-full sm:w-auto"
                             >
                                 View Live Demo
                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

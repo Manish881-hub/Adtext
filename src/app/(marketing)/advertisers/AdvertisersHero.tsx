@@ -79,15 +79,16 @@ const AdvertisersHero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
+                            className="flex flex-col gap-4 sm:flex-row sm:gap-4"
                         >
-                            <Link href="/advertisers/contact">
-                                <Button size="lg" className="group font-mono uppercase tracking-wider text-sm">
+                            <Link href="/advertisers/contact" className="w-full sm:w-auto">
+                                <Button size="lg" className="group font-mono uppercase tracking-wider text-sm w-full sm:w-auto">
                                     Get started
                                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                 </Button>
                             </Link>
-                            <Link href="https://Demo.adtext.org" target="_blank">
-                                <Button size="lg" className="group font-mono uppercase tracking-wider text-sm ml-4">
+                            <Link href="https://Demo.adtext.org" target="_blank" className="w-full sm:w-auto">
+                                <Button size="lg" variant="outline" className="group font-mono uppercase tracking-wider text-sm w-full sm:w-auto">
                                     See Live Placement
                                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                 </Button>
