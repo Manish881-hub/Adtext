@@ -11,6 +11,10 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: "Adtext - Contextual Ads for AI Apps",
     description: "The ad platform built for AI chatbots. Monetize your AI app without hurting user experience.",
+    icons: {
+        icon: "/logo/favicon.svg",
+        shortcut: "/logo/favicon.svg",
+    },
 };
 
 export default function RootLayout({
