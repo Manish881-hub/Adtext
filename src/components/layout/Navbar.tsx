@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
@@ -35,9 +36,13 @@ export function Navbar() {
                                     <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
                                     <div className="flex flex-col gap-8 mt-8">
                                         <Link href="/" className="text-xl font-heading font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2">
-                                            <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm font-mono">
-                                                A
-                                            </div>
+                                            <Image
+                                                src="/logo/favicon.svg"
+                                                alt="Adtext logo"
+                                                width={28}
+                                                height={28}
+                                                className="w-7 h-7"
+                                            />
                                             Adtext
                                         </Link>
                                         <div className="flex flex-col gap-4 text-lg font-medium font-sans">
