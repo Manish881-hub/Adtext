@@ -86,7 +86,7 @@ export default function PublishersHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <Link href="/publishers/signup">
+                        <Link href="/publishers/contact">
                             <Button
                                 size="lg"
                                 className="group font-mono uppercase tracking-wider text-sm"
